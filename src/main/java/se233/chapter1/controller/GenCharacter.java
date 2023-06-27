@@ -7,8 +7,8 @@ import se233.chapter1.model.character.PhysicalCharacter;
 import java.util.Random;
 
 
+// Hello
 
-//
 public class GenCharacter {
     public static BasedCharacter setUpCharacter() {
         BasedCharacter character;
