@@ -2,7 +2,7 @@ package se233.chapter1.model.character;
 
 import se233.chapter1.model.DamageType;
 
-public class MagicalCharacter extends BasedCharacter{
+public class MagicalCharacter extends BasedCharacter {
     public MagicalCharacter(String name,String imgpath,int basedDef,int basedRes) {
         this.name = name;
         this.type = DamageType.magical;

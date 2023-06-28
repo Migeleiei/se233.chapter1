@@ -5,10 +5,11 @@ import javafx.scene.input.DataFormat;
 import java.io.Serializable;
 
 public class BasedEquipment implements Serializable {
-    public static final DataFormat DATA_FORMAT = new DataFormat("src.main.java.se233.chapter1.model.item.BasedEquipment");
+    public static final DataFormat DATA_FORMAT =
+            new DataFormat( "se233.chapter1.model.item.BasedEquipment");
     protected String name;
     protected String imgpath;
-    public String getName(){ return name;}
-    public String getImgpath(){ return  imgpath;}
-    public void setImgpath(String imgpath){ this.imgpath = imgpath;}
+    public String getName() { return name; }
+    public String getImagepath() { return imgpath; }
+    public void setImagepath(String imgpath) { this.imgpath = imgpath; }
 }

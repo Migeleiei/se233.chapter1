@@ -20,18 +20,28 @@ public class CharacterPane extends ScrollPane {
 
     private Pane getDetailsPane() {
         Pane characterInfoPane = new VBox(10);
+//        Pane tempPane = new VBox(10);
         characterInfoPane.setBorder(null);
         characterInfoPane.setPadding(new Insets(25, 25, 25, 25));
+
+//        tempPane.setBorder(null);
+//        tempPane.setPadding(new Insets(25, 25, 25, 25));
+//        characterInfoPane = tempPane;
         Label name, type, hp, atk, def, res;
         ImageView mainImage = new ImageView();
         if (this.character != null) {
             name = new Label("Name: " + character.getName());
-            mainImage.setImage(new Image(Launcher.class.getResource(character.getImagepath()).toString()));
-            hp = new Label("Hp: " + character.getHp().toString() + "/" + character.getFullHp().toString());
+            System.out.println("**********"+character.getImagepath());
+            mainImage.setImage(new Image(Launcher.class.getResource(character.
+                    getImagepath()).toString()));
+            hp = new Label("HP: " + character.getHp().toString() + "/" + character.
+                    getFullHp().toString());
             type = new Label("Type: " + character.getType().toString());
-            atk = new Label("ATK: " + character.getPower().toString());
+            atk = new Label("ATK: " + character.getPower());
             def = new Label("DEF: " + character.getDefense());
-            res = new Label("RES: " + character.getResistance());
+            res = new Label("ATK: " + character.getPower());
+            new Label("DEF: " + character.getDefense());
+            new Label("RES: " + character.getResistance());
         } else {
             name = new Label("Name: ");
             mainImage.setImage(new Image(Launcher.class.getResource("assets/unknown.png").toString()));
@@ -43,8 +53,15 @@ public class CharacterPane extends ScrollPane {
         }
         Button genCharacter = new Button();
         genCharacter.setText("Generate Character");
+
+        //TODO:
         genCharacter.setOnAction(new AllCustomHandler.GenCharacterHandler());
-        characterInfoPane.getChildren().addAll(name, mainImage, type, hp, atk, def, res, genCharacter);
+        //
+        System.out.println("*************-------");
+
+        characterInfoPane.getChildren().addAll(name,mainImage,type,hp,atk,def,res,
+                genCharacter);
+
         return characterInfoPane;
     }
 

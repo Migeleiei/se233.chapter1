@@ -15,3 +15,4 @@ public class Armor extends BasedEquipment {
     @Override
     public String toString(){ return name;}
 }
+

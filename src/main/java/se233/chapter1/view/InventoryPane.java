@@ -15,41 +15,57 @@ import se233.chapter1.model.item.BasedEquipment;
 
 import java.util.ArrayList;
 
+import static se233.chapter1.controller.AllCustomHandler.onDragDetected;
+import static se233.chapter1.controller.AllCustomHandler.onEquipDone;
+
 public class InventoryPane extends ScrollPane {
+    //    private BasedEquipment[] equipmentArray;
     private ArrayList<BasedEquipment> equipmentArray;
-    public InventoryPane(){ }
-    private Pane getDetailPane(){
-        Pane inventoryinfoPane = new HBox(10);
-        inventoryinfoPane.setBorder(null);
-        inventoryinfoPane.setPadding(new Insets(25,25,25,25));
-        if(equipmentArray != null){
+
+    public InventoryPane() {
+    }
+
+    private Pane getDetailsPane() {
+        Pane inventoryInfoPane = new HBox(10);
+        inventoryInfoPane.setBorder(null);
+        inventoryInfoPane.setPadding(new Insets(25, 25, 25, 25));
+        if (equipmentArray != null) {
             ImageView[] imageViewList = new ImageView[equipmentArray.size()];
-            for(int i=0 ; i< equipmentArray.size() ; i++) {
+            for (int i = 0; i < equipmentArray.size(); i++) {
                 imageViewList[i] = new ImageView();
-                imageViewList[i].setImage(new Image(Launcher.class.getResource(equipmentArray.get(i).getImgpath()).toString()));
+                imageViewList[i].setImage(new Image(Launcher.class.getResource(
+                        equipmentArray.get(i).getImagepath()).toString()));
+
+                //1.36
                 int finalI = i;
                 imageViewList[i].setOnDragDetected(new EventHandler<MouseEvent>() {
+                    @Override
                     public void handle(MouseEvent event) {
-                        //TODO check again
-                        AllCustomHandler.onDragDetected(event, equipmentArray.get(finalI),imageViewList[finalI]);
+                        AllCustomHandler.onDragDetected(event, equipmentArray.get(finalI), imageViewList[finalI]);
                     }
                 });
+                //1.36
+                //1.42
                 imageViewList[i].setOnDragDone(new EventHandler<DragEvent>() {
                     @Override
                     public void handle(DragEvent event) {
-                        AllCustomHandler.onEquipDone(event);
+                        onEquipDone(event);
                     }
                 });
-            }
-            inventoryinfoPane.getChildren().addAll(imageViewList);
-        }
-        return inventoryinfoPane;
+                //1.42
 
+
+            }
+            inventoryInfoPane.getChildren().addAll(imageViewList);
+        }
+        return inventoryInfoPane;
     }
+
     public void drawPane(ArrayList<BasedEquipment> equipmentArray) {
         this.equipmentArray = equipmentArray;
-        Pane inventoryInfo = getDetailPane();
+        Pane invetoryInfo = getDetailsPane();
         this.setStyle("-fx-background-color:Red;");
-        this.setContent(inventoryInfo);
+        this.setContent(invetoryInfo);
     }
 }
+

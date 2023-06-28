@@ -6,9 +6,6 @@ import se233.chapter1.model.character.PhysicalCharacter;
 
 import java.util.Random;
 
-
-// Hello
-
 public class GenCharacter {
     public static BasedCharacter setUpCharacter() {
         BasedCharacter character;
@@ -17,9 +14,11 @@ public class GenCharacter {
         int basedDef = rand.nextInt(50)+1;
         int basedRes = rand.nextInt(50)+1;
         if (type == 1) {
-            character = new MagicalCharacter("MagicChar1", "assets/wizard.png", basedDef,basedRes);
+            character = new MagicalCharacter("MagicChar1", "assets/wizard.png",
+                    basedDef,basedRes);
         } else {
-            character = new PhysicalCharacter("PhysicalChar1", "assets/knight.png", basedRes,basedRes);
+            character = new PhysicalCharacter("PhysicalChar1", "assets/knight.png",
+                    basedRes,basedRes);
         }
         return character;
     }

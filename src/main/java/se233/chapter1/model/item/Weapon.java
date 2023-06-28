@@ -1,9 +1,8 @@
 package se233.chapter1.model.item;
 
 import se233.chapter1.model.DamageType;
-import se233.chapter1.model.character.BasedCharacter;
 
-public class Weapon extends BasedEquipment {
+public class Weapon extends BasedEquipment{
     private int power;
     private DamageType damageType;
     public Weapon(String name, int power, DamageType damageType, String imgpath) {
