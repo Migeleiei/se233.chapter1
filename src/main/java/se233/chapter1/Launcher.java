@@ -20,6 +20,7 @@ import java.util.ArrayList;
 
 public class Launcher extends Application {
 
+    //test
 
     private static Scene mainScene;
     private static BasedCharacter mainCharacter = null;
