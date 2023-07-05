@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56ca87ce-542b-4171-a759-27846e45a22c" name="Changes" comment="Test">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/model/character/BattlemageCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/controller/AllCustomHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/controller/AllCustomHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/controller/GenCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/controller/GenCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/controller/GenItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/controller/GenItemList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/model/DamageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/model/DamageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/view/EquipPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/view/EquipPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/controller/GenItemList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/controller/GenItemList.class" afterDir="false" />
+    <list default="true" id="56ca87ce-542b-4171-a759-27846e45a22c" name="Changes" comment="add weapon">
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/controller/GenCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/controller/GenCharacter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/model/DamageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/model/DamageType.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +60,20 @@
       <option name="project" value="LOCAL" />
       <updated>1687975373463</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add weapon">
+      <option name="closed" value="true" />
+      <created>1688569169718</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688569169718</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="add weapon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add weapon" />
   </component>
 </project>
