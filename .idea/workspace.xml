@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56ca87ce-542b-4171-a759-27846e45a22c" name="Changes" comment="add weapon">
-      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/controller/GenCharacter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/controller/GenCharacter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/model/DamageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/model/DamageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/controller/AllCustomHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/controller/AllCustomHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/model/character/BasedCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/model/character/BasedCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/view/CharacterPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/view/CharacterPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se233/chapter1/view/EquipPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se233/chapter1/view/EquipPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/controller/AllCustomHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/controller/AllCustomHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/view/CharacterPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/view/CharacterPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se233/chapter1/view/EquipPane.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/jusuchon/Desktop/FreshJava/repo/chapter1/se233.chapter1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jusuchon/Desktop/FreshJava/repo/chapter1/se233.chapter1&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

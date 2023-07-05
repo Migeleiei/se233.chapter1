@@ -3,6 +3,7 @@ package se233.chapter1.view;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
@@ -35,12 +36,19 @@ public class  EquipPane extends ScrollPane {
         StackPane armorImgGroup = new StackPane();
         ImageView bg1 = new ImageView();
         ImageView bg2 = new ImageView();
+
         //1.38
         ImageView weaponImg = new ImageView();
         ImageView armorImg = new ImageView();
+
         //1.38
         bg1.setImage(new Image(Launcher.class.getResource("assets/blank.png").toString()));
         bg2.setImage(new Image(Launcher.class.getResource("assets/blank.png").toString()));
+
+        Button btnRefresh = new Button();
+        btnRefresh.setText("Refresh");
+        btnRefresh.setOnAction(new AllCustomHandler.RefreshAllEquipment());
+
         weaponImgGroup.getChildren().add(bg1);
         armorImgGroup.getChildren().add(bg2);
         //1.38
@@ -86,7 +94,7 @@ public class  EquipPane extends ScrollPane {
             public void handle(DragEvent e) { onDragDropped(e, armorLbl, armorImgGroup); }
         });
         equipmentInfoPane.getChildren().addAll(weaponLbl,weaponImgGroup,armorLbl,
-                armorImgGroup);
+                armorImgGroup,btnRefresh);
         //1.38
 //        equipmentInfoPane.getChildren().addAll(weaponLbl, weaponImg, armorLbl,
 //                armorImg);

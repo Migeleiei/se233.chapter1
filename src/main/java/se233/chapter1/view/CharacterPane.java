@@ -31,7 +31,7 @@ public class CharacterPane extends ScrollPane {
         ImageView mainImage = new ImageView();
         if (this.character != null) {
             name = new Label("Name: " + character.getName());
-            System.out.println("**********"+character.getImagepath());
+
             mainImage.setImage(new Image(Launcher.class.getResource(character.
                     getImagepath()).toString()));
             hp = new Label("HP: " + character.getHp().toString() + "/" + character.
@@ -54,10 +54,10 @@ public class CharacterPane extends ScrollPane {
         Button genCharacter = new Button();
         genCharacter.setText("Generate Character");
 
-        //TODO:
+
         genCharacter.setOnAction(new AllCustomHandler.GenCharacterHandler());
-        //
-        System.out.println("*************-------");
+
+
 
         characterInfoPane.getChildren().addAll(name,mainImage,type,hp,atk,def,res,
                 genCharacter);

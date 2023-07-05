@@ -41,15 +41,16 @@ public class BasedCharacter {
     }
 
     //1.39
-    public void equipWeapon(Weapon weapon) {
+    public void equipWeapon(Weapon weapon,boolean isRefresh) {
+
         this.weapon = weapon;
-        this.power = this.basedPow + weapon.getPower();
+        this.power = isRefresh ? this.basedPow : this.basedPow + weapon.getPower();
     }
 
-    public void equipArmor(Armor armor) {
+    public void equipArmor(Armor armor,boolean isRefresh) {
         this.armor = armor;
-        this.defense = this.basedDef + armor.getDefense();
-        this.resistance = this.basedRes + armor.getResistance();
+        this.defense = isRefresh ? this.basedDef : this.basedDef + armor.getDefense();
+        this.resistance = isRefresh ? this.basedRes : this.basedRes + armor.getResistance();
     }
 
     //1.39
