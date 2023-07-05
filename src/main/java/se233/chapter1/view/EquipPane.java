@@ -20,7 +20,7 @@ import static se233.chapter1.controller.AllCustomHandler.onDragDropped;
 import static se233.chapter1.controller.AllCustomHandler.onDragOver;
 
 
-public class EquipPane extends ScrollPane {
+public class  EquipPane extends ScrollPane {
     private Weapon equippedWeapon;
     private Armor equippedArmor;
     public EquipPane() { }

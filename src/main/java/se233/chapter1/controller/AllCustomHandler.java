@@ -116,6 +116,10 @@ public class AllCustomHandler {
         Launcher.setAllEquipments(allEquipments);
         Launcher.refreshPane();
     }
+    public static void onDroppingOut(DragEvent event){
+        Dragboard dragboard = event.getDragboard();
+
+    }
     //1.41
 
 
